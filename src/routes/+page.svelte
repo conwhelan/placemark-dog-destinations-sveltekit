@@ -1,2 +1,11 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script>
+  let appName = $state("Dog Destinations");
+  let tagline = $state("Discover dog-friendly places worth visiting.");
+</script>
+
+<main>
+  <section>
+    <h1>{appName}</h1>
+    <p>{tagline}</p>
+  </section>
+</main>
